@@ -60,10 +60,10 @@
 
 ## Screenshots
 
-1. **Related Posts Display**
+1. **Plugin Settings Page**
    ![Screenshot 1](screenshot-1.png)
 
-2. **Plugin Settings Page**
+2. **Related Posts Display**
    ![Screenshot 2](screenshot-2.png)
 
 ---
