@@ -1,0 +1,150 @@
+/**
+ * RWC Related Posts v1.0.0 - 22 December, 2024
+ * By @realwebcare - https://www.realwebcare.com/
+ */
+.warp-heading {
+    font-size: 24px;
+    font-weight: 700;
+    color: #333333;
+    text-align: center;
+    margin: 40px 0 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    position: relative;
+}
+
+/* Add a subtle underline decoration */
+.warp-heading::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: #0073aa; /* Accent color */
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+/* Container Styling */
+.warp-related {
+    list-style: none;
+    margin: 20px 0 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(5, 1fr); /* Default: 4 posts per row */
+    justify-content: center;
+}
+
+/* Individual List Item Styling */
+.warp-related .warp-related-lists {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 0; /* Removed padding */
+}
+
+.warp-related-lists:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Thumbnail Styling */
+.warp-related-lists .warp-thumbnail {
+    display: block;
+    overflow: hidden;
+}
+
+.warp-related-lists .warp-thumbnail img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px 8px 0 0; /* Rounded corners only on the top */
+}
+
+/* Content Wrapper */
+.warp-related-lists .warp-content-wrapper {
+    padding: 15px; /* Added padding for the content area */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Author Name Styling */
+.warp-related-lists span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #888888;
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.warp-related-lists .warp-author-wrapper {
+    padding: 15px;
+    position: relative;
+}
+
+.warp-related-lists .warp-author-image,
+.warp-related-lists .warp-author-name {
+    margin: 0;
+    max-height: 26px;
+}
+
+.warp-related-lists .warp-author-image img {
+    position: absolute;
+    top: 50%;
+    border: 1px solid #aaa;
+    border-radius: 9999px;
+    transform: translateY(-50%);
+}
+
+.warp-related-lists .warp-author-name {
+    font-size: 14px;
+    color: #444444;
+    margin-left: 26px;
+}
+
+/* Title Styling */
+.warp-content-wrapper .warp-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333333;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.warp-content-wrapper .warp-title a {
+    text-decoration: none;
+    color: #FF5722;
+}
+
+.warp-content-wrapper .warp-title a:hover {
+    color: #333333;
+}
+
+/* Content Styling */
+.warp-content-wrapper .warp-content {
+    font-size: 14px;
+    font-weight: 400;
+    color: #838383;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    height: 60px; /* Approx. 3 lines of text */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) { /* Tablet View */
+    .warp-related {
+        grid-template-columns: repeat(2, 1fr); /* 2 posts per row */
+    }
+}
+
+@media (max-width: 768px) { /* Mobile View */
+    .warp-related {
+        grid-template-columns: 1fr; /* 1 post per row */
+    }
+}
