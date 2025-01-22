@@ -68,12 +68,18 @@
 
 ---
 
-## Support
+## **License**
 
-If you encounter any issues or have feature requests, please contact the plugin author or open an issue in the repository.
+This plugin is licensed under the [GPLv3 or later](https://www.gnu.org/licenses/gpl-3.0.html).
 
 ---
 
-## License
+## **Support**
 
-This plugin is licensed under the GPL v2.0. See the LICENSE file for more details.
+If you encounter any issues or have questions, please open an issue on the [GitHub repository](https://github.com/realwebcare/RWC-Frontend-Dashboard.git).
+
+---
+
+## **Credits**
+
+Developed by [Realwebcare](https://www.realwebcare.com/).
